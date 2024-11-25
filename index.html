@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #navbar {
+            height: 60px;
+            background-color: #3D3BF3;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+        #navbar a {
+            color: white;
+            font-size: 20px; 
+            text-decoration: none;
+            margin: 0 20px;  
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            transition: all 0.3s ease;  
+        }
+        #navbar a:hover {
+            background-color: lightblue;  
+            color: #3D3BF3; 
+        }
+        .banner {
+            position: relative;
+            width: 100vw;  
+            height: 100vh;  
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/94/Barnstable_High_School_entrance.jpg'); 
+            background-size: cover;  
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 45%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: #B8001F;
+            background-color: #FEF3E2;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="page1.html">Home</a>
+        <a href="page2.html">Parent Login</a>
+    </div>
+    <div class="banner">
+        <div class="text-overlay">SV Primary School</div>
+    </div>
+</body>
+</html>

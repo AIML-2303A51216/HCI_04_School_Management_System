@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timetable</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://i.pinimg.com/originals/7a/5d/ec/7a5decdc884b4688d6563b6d26d9f841.jpg"); 
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 150;
+    }
+    .container {
+        background-color: rgba(255, 255, 255, 0.85); 
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        text-align: center;
+        width: 80%; 
+        max-width: 800px; 
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px; 
+    }
+    th {
+        font-weight: bold;
+        background-color: #f0f0f0; 
+    }
+    .wide-cell {
+        font-weight: bold;
+    }
+    .back-arrow {
+        font-size: 24px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="back-arrow">&#8592;</div>
+    <div class="container">
+        <h1>&#x1F4C5; TIME TABLE</h1>
+        <table>
+            <tr>
+                <th>C</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>9:00-9:45</td>
+                <td>9:45-10:25</td>
+                <td>10:25-11:05</td>
+                <td>11:20-12:00</td>
+                <td>12:00-12:40</td>
+                <td>1:20-2:00</td>
+                <td>2:00-2:40</td>
+                <td>2:40-3:20</td>
+            </tr>
+            <tr>
+                <td>Monday to Saturday</td>
+                <td>Evs</td>
+                <td>Hin</td>
+                <td>Eng</td>
+                <td>Maths</td>
+                <td>Tel</td>
+                <td>M,T - Dance<br>W,Th - Com<br>F,S - G.K</td>
+                <td>M,T - Game<br>W,Th - Dra<br>F,S - Com</td>
+                <td class="wide-cell">Maths<br>S/H</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("https://getwallpapers.com/wallpaper/full/c/d/6/829593-school-background-images-2480x1753-large-resolution.jpg") ;
+            background-size: cover;
+        }
+        .container {
+            position: relative;
+            width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .orange-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 120px;
+            background-color: #ff7f00;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+        .login-form h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .title-underline {
+            width: 50px;
+            height: 3px;
+            background-color: #ff7f00;
+            margin: 10px auto 20px auto;
+            border: none;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            border-bottom: 1px solid #333;
+            position: relative;
+        }
+        .input-group label {
+            font-weight: bold;
+            color: #333;
+            width: 100px;
+            text-align: left;
+        }
+        .input-group input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 8px;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            color: #333;
+            border-radius: 4px;
+        }
+        .input-group .icon {
+            font-size: 24px;
+            color: #333;
+            position: absolute;
+            right: 10px;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            background-color: #ff7f00;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #e66b00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="orange-accent"></div>
+
+        <div class="login-form">
+            <h1>Parent Login</h1>
+            <hr class="title-underline">
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="student-name">Student name</label>
+                    <input type="text" id="student-name" placeholder="Enter student name" required>
+                    <span class="icon">&#128100;</span> 
+                </div>
+
+                <div class="input-group">
+                    <label for="parent-name">Parent name</label>
+                    <input type="text" id="parent-name" placeholder="Enter parent name" required>
+                    <span class="icon">&#128101;</span> 
+                </div>
+
+                <div class="input-group">
+                    <label for="class">Class</label>
+                    <input type="text" id="class" placeholder="Enter class" required>
+                    <span class="icon">&#128218;</span> 
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const studentName = document.getElementById('student-name').value;
+            const parentName = document.getElementById('parent-name').value;
+            const className = document.getElementById('class').value;
+            if (!studentName || !parentName || !className) {
+                alert('All fields are required!');
+                return;
+            }
+            const queryString = `?student=${encodeURIComponent(studentName)}&parent=${encodeURIComponent(parentName)}&class=${encodeURIComponent(className)}`;
+            window.location.href = 'page3.html' + queryString;
+        });
+    </script>
+</body>
+</html>

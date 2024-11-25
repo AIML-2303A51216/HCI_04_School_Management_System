@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Teachers</title>
+    <style>
+         
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+         
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+         
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+         
+        .teacher-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;  
+        }
+
+        .teacher {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: #fff;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .teacher h2 {
+            margin: 0 0 0.5rem;
+            color: #333;
+        }
+
+        .teacher p {
+            margin: 0.5rem 0;
+            color: #555;
+        }
+
+         
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Subject Teachers</h1>
+    </header>
+    <main>
+        <section class="teacher-list">
+            <article class="teacher">
+                <h2>Ms. Siri</h2>
+                <p>Subject: Telugu</p>
+                <p>Contact: 1234567890</p>
+            </article>
+            <article class="teacher">
+                <h2>Ms. Reethika</h2>
+                <p>Subject: Hindi</p>
+                <p>Contact: 9876543210</p>
+            </article>
+            <article class="teacher">
+                <h2>Ms. Satya</h2> 
+                <p>Subject: English</p>
+                <p>Contact: 4567891234</p>
+            </article>
+            <article class="teacher">
+                <h2>Mr. Abhinav</h2>
+                <p>Subject: Mathematics</p>
+                <p>Contact: 3216549870</p>
+            </article>
+            <article class="teacher">
+                <h2>Mr. Shishir</h2>
+                <p>Subject: Evs</p>
+                <p>Contact: 7891234567</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

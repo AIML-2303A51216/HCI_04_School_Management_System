@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://img.pikbest.com/backgrounds/20220119/simple-border-education_6243291.jpg!sw800");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .dashboard {
+            text-align: center;
+            width: 100%;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .header .profile-icon {
+            font-size: 60px;
+            color: #333;
+            background-color: #e0e0e0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .header .info {
+            text-align: left;
+        }
+        .header .info p {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .header .info p span {
+            font-weight: normal;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 15px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .homework { background-color: #f7c1c1; }
+        .timetable { background-color: #ffe5b4; }
+        .fees { background-color: #b3e5fc; }
+        .attendance { background-color: #d4edda; }
+        .holidays { background-color: #f4f8c2; }
+        .events { background-color: #dcdcdc; }
+        .progress { background-color: #ffc180; }
+        .teachers { background-color: #c5cae9; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <div class="profile-icon">
+                &#128100;
+            </div>
+            <div class="info">
+                <p>Name: <span>Vyshnavi.R</span></p>
+                <p>Class: <span>2-A</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+             
+            <div class="grid-item homework" onclick="redirectToHomework()">
+                <img src="https://img.icons8.com/ios-filled/100/book.png" alt="Homework Icon">
+                <p>HOME WORK</p>
+            </div>
+            <div class="grid-item timetable" onclick="redirectToTimetable()">
+                <img src="https://img.icons8.com/ios-filled/100/calendar.png" alt="Time Table Icon">
+                <p>TIME TABLE</p>
+            </div>
+            <div class="grid-item fees" onclick="redirectToFee()">
+                <img src="https://img.icons8.com/ios-filled/100/rupee.png" alt="Fees Icon">
+                <p>FEES</p>
+            </div>
+            <div class="grid-item attendance" onclick="redirectToAttendance()">
+                <img src="https://img.icons8.com/ios-filled/100/checklist.png" alt="Attendance Icon">
+                <p>ATTENDANCE</p>
+            </div>
+             
+            <div class="grid-item holidays" onclick="redirectToHolidays()">
+                <img src="https://img.icons8.com/ios-filled/100/calendar--v1.png" alt="Holidays Icon">
+                <p>HOLIDAYS</p>
+            </div>
+            <div class="grid-item events" onclick="redirectToEvents()">
+                <img src="https://img.icons8.com/ios-filled/100/star.png" alt="Events Icon">
+                <p>EVENTS</p>
+            </div>
+            <div class="grid-item progress" onclick="redirectToProgress()">
+                <img src="https://img.icons8.com/ios-filled/100/todo-list.png" alt="Progress Icon">
+                <p>PROGRESS</p>
+            </div>
+            <div class="grid-item teachers" onclick="redirectToTeachers()">
+                <img src="https://img.icons8.com/ios-filled/100/class.png" alt="Subject Teachers Icon">
+                <p>SUBJECT TEACHERS</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToHomework() {
+            window.location.href = "page13.html";  
+        }
+        function redirectToTimetable() {
+            window.location.href = "page5.html";  
+        }
+        function redirectToFee() {
+            window.location.href = "page6.html";  
+        }
+        function redirectToAttendance() {
+            window.location.href = "page10.html";  
+        }
+        function redirectToHolidays() {
+            window.location.href = "page7.html";  
+        }
+        function redirectToEvents() {
+            window.location.href = "page8.html";  
+        }
+        function redirectToProgress() {
+            window.location.href = "page9.html";  
+        }
+        function redirectToTeachers() {
+            window.location.href = "page12.html";  
+        }
+    </script>
+</body>
+</html>
